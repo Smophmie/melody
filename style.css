@@ -11,7 +11,7 @@
 [Polices]
 - Textes et titres : Comfortaa */
 
-html {
+body {
     font-family: "Comfortaa", sans-serif;
     background-color:  #E9EEF5;
 }
@@ -48,6 +48,7 @@ h2 {
     background-color: #fff;
     width: 80px;
     height: 40px;
+    cursor: pointer;
 }
 
 .toggle {
@@ -56,6 +57,17 @@ h2 {
     border-radius: 15px;
     background-color: rgb(150, 153, 153);
     margin: 5px;
+    padding: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.toggleicon {
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 7px;
+    padding: 0;
 }
 
 main {
@@ -110,4 +122,33 @@ input::placeholder {
 #highcapture {
     position: relative;
     bottom: 100px;
+}
+
+/* DARK MODE */
+.darkmode {
+    background-color: #0D1219;
+    color: white;
+}
+
+.darkmode .togglecontainer {
+    background-color: #06080B;
+}
+.darkmode .toggle {
+    transform : translateX(40px);
+    background-color: #0D1219;
+}
+
+/* ANIMATION */
+/* Problème pendant l'animation : l'icône sort de sa div pendant sa rotation */
+.toggleicon.animated {
+    animation : spin 0.5s;
+}
+
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
