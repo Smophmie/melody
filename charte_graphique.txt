@@ -1,0 +1,12 @@
+[Couleurs]
+- Sombre (principal) : #0D1219
+- Sombre (alternatif) : #06080B
+
+- Clair (principal) : #E9EEF5
+- Clair (alternatif) : #D3DDEB
+
+- Lavande (principal) : #8438B8
+- Lavande (alternatif) : #9C8AA8
+
+[Polices]
+- Textes et titres : Comfortaa

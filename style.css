@@ -1,0 +1,113 @@
+/* [Couleurs]
+- Sombre (principal) : #0D1219
+- Sombre (alternatif) : #06080B
+
+- Clair (principal) : #E9EEF5
+- Clair (alternatif) : #D3DDEB
+
+- Lavande (principal) : #8438B8
+- Lavande (alternatif) : #9C8AA8
+
+[Polices]
+- Textes et titres : Comfortaa */
+
+html {
+    font-family: "Comfortaa", sans-serif;
+    background-color:  #E9EEF5;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.togglecontainer {
+    border-radius: 40px;
+    background-color: #fff;
+    width: 80px;
+    height: 40px;
+}
+
+.toggle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(150, 153, 153);
+    margin: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.leftcol {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightcol {
+    display: flex;
+}
+
+
+.violetcolor {
+    color: #8438B8;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+.capture {
+    width: 250px;
+    height: auto;
+    padding: 30px;
+}
+
+#saisiemail {
+    background-color: #fff;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+input {
+    border: none;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+#highcapture {
+    position: relative;
+    bottom: 100px;
+}
